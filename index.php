@@ -48,7 +48,7 @@
  * This can be set to anything, but default usage is:
  *
  *     development
- *     testing
+ *     testing SSID AP-INFO SENHA INFO-AP_903
  *     production
  *
  * NOTE: If you change these, also change the error_reporting() code below
