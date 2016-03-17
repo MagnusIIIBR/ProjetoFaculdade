@@ -1,10 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class FuncionarioController extends CI_Controller {
+class Venda extends CI_Controller {
 
     public function index()
     {
-        $this->load->view('welcome_message');
+        $this->load->view('index');
     }
 }
