@@ -1,0 +1,6 @@
+GENEROWANIE class Z BAZY:
+php cli-doctrine.php orm:convert-mapping --from-database annotation models/Entities
+
+INSTALACJA BAZY:
+mysql-ctl install
+phpmyadmin-ctl install

@@ -1,82 +1,80 @@
 <?php
-
-defined('BASEPATH') OR exit('No direct script access allowed');
+/**
+ * Doctrine 2.4 bootstrap
+ *
+ */
 
 use Doctrine\Common\ClassLoader,
     Doctrine\ORM\Configuration,
     Doctrine\ORM\EntityManager,
     Doctrine\Common\Cache\ArrayCache,
-    Doctrine\DBAL\Logging\EchoSQLLogger,
-    Doctrine\Common\Cache\ApcCache;
+    Doctrine\DBAL\Logging\EchoSQLLogger;
+
 
 class Doctrine {
 
-    public $em = null;
+  public $em = null;
 
-    public function __construct()
-    {
-        // in this way, when other apps are using this package
-        // they can also rely on this library and free to use Doctrine
-        $common_app = BASEPATH . "../application/";
+  public function __construct()
+  {
+    // load database configuration from CodeIgniter
+    require_once APPPATH.'config/database.php';
 
-        // load database configuration from CodeIgniter
-        require_once $common_app.'config/database.php';
+    // include Doctrine's ClassLoader class
+    require_once APPPATH.'third_party/Doctrine/Common/ClassLoader.php';
 
-        // Doctrine will look for:
-        // model classes defined in $modelsPath/$entitiesNamespace
-        // with namespace Entities
-        $modelsPath = $common_app.'models';
-        $entitiesNamespace = "Entities";
-        $entitiesClassLoader = new ClassLoader($entitiesNamespace, $modelsPath);
-        $entitiesClassLoader->register();
+    // load the Doctrine classes        
+    $doctrineClassLoader = new ClassLoader('Doctrine',  APPPATH.'third_party');
+    $doctrineClassLoader->register();
+    // load the entities
+    $entityClassLoader = new ClassLoader('Entities', APPPATH.'models');
+    $entityClassLoader->register();
+    // load the proxy entities
+    $proxiesClassLoader = new ClassLoader('Proxies', APPPATH.'models/proxies');
+    $proxiesClassLoader->register();
+    // load Symfony2 classes
+    // this is necessary for YAML mapping files and for Command Line Interface (cli-doctrine.php)
+    $symfonyClassLoader = new ClassLoader('Symfony',  APPPATH.'third_party/Doctrine');
+    $symfonyClassLoader->register();
 
-        // default models, when defining the model, make sure you specific
-        // the namespace for it: namespace models;
-        // Doctrine will look for:
-        // model classes defined in $common_app/models
-        // with namespace models
-        $defaultEntitiesClassLoader = new ClassLoader('models', rtrim($common_app, "/" ));
-        $defaultEntitiesClassLoader->register();
+    // Set up the configuration
+    $config = new Configuration;
 
-        $proxiesClassLoader = new ClassLoader('Proxies', $common_app.'models/Proxies');
-        $proxiesClassLoader->register();
+    // Set up caches
+    if(ENVIRONMENT == 'development')  // set environment in index.php
+        // set up simple array caching for development mode
+        $cache = new \Doctrine\Common\Cache\ArrayCache;
+    else
+        // set up caching with APC for production mode
+        $cache = new \Doctrine\Common\Cache\ApcCache;  
+    $config->setMetadataCacheImpl($cache);
+    $config->setQueryCacheImpl($cache);
 
-        $config = new Configuration;
-        $driverImpl = $config->newDefaultAnnotationDriver(array($common_app.'models'));
-        $config->setMetadataDriverImpl($driverImpl);
+    // set up annotation driver
+    $driver = new \Doctrine\ORM\Mapping\Driver\PHPDriver(APPPATH.'models/Mappings');
+    $config->setMetadataDriverImpl($driver);
 
-        // Proxy configuration
-        $config->setProxyDir($common_app.'/models/Proxies');
-        $config->setProxyNamespace('Proxies');
+    // Proxy configuration
+    $config->setProxyDir(APPPATH.'/models/Proxies');
+    $config->setProxyNamespace('Proxies');
 
-        // please refer to http://doctrine-orm.readthedocs.org/en/latest/reference/caching.html?highlight=apc%20cache
-        // In order to use the APC cache driver you must have it compiled and enabled in your php.ini.
-        // other alternatives are Memcache, Memcached, Xcache, Redis, etc.
-        /* if(ENVIRONMENT == 'development') */
-        /*   $cache = new ArrayCache; */
-        /* else */
-        /*   $cache = new ApcCache; */
-        /* $config->setMetadataCacheImpl($cache); */
-        /* $config->setQueryCacheImpl($cache); */
+    // Set up logger
+    $logger = new EchoSQLLogger;
+    $config->setSQLLogger($logger);
 
-        // Logger, uncomment these two lines when debugging
-        /* $logger = new EchoSQLLogger; */
-        /* $config->setSQLLogger($logger); */
+    $config->setAutoGenerateProxyClasses( TRUE ); // only for development
 
-        $config->setAutoGenerateProxyClasses( ENVIRONMENT == 'development' );
+    // Database connection information
+    $connectionOptions = array(
+        'driver' => 'pdo_mysql',
+        'user' =>     $db['default']['username'],
+        'password' => $db['default']['password'],
+        'host' =>     $db['default']['hostname'],
+        'dbname' =>   $db['default']['database']
+    );
 
-        // Database connection information
-        $connectionOptions = array(
-            'driver' => 'pdo_mysql',
-            'user' =>     $db['default']['username'],
-            'password' => $db['default']['password'],
-            'host' =>     $db['default']['hostname'],
-            'dbname' =>   $db['default']['database'],
-            'charset' => $db['default']['char_set'],
-            'driverOptions' =>
-                array('charset' => $db['default']['char_set']));
-
-        // Create EntityManager
-        $this->em = EntityManager::create($connectionOptions, $config);
-    }
+    // Create EntityManager, and store it for use in our CodeIgniter controllers
+    $this->em = EntityManager::create($connectionOptions, $config);
+  }
 }
+?>

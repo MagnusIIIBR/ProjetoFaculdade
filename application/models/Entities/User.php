@@ -1,15 +1,75 @@
 <?php
-namespace Entities;
 
-/** @Entity */
+
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * User
+ *
+ * @ORM\Table(name="User")
+ * @ORM\Entity
+ */
 class User
 {
-  /** @Id @Column(type="integer") @GeneratedValue */
-  private $id;
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
 
-  /** @Column(type="string") */
-  private $name;  
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="login", type="string", length=255, nullable=false)
+     */
+    private $login;
 
-  public function setName($name) { $this->name = $name; }
-  public function getId() { return $this->id; }
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=255, nullable=false)
+     */
+    private $email;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="password", type="string", length=255, nullable=false)
+     */
+    private $password;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="status", type="integer", nullable=false)
+     */
+    private $status;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="active_code", type="string", length=255, nullable=false)
+     */
+    private $activeCode;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="create_date", type="datetime", nullable=false)
+     */
+    private $createDate;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="log_date", type="datetime", nullable=false)
+     */
+    private $logDate;
+
+
 }
+
