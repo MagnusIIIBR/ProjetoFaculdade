@@ -15,29 +15,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <title>Projeto SAPATARIA | Login</title>
 
-    <link rel="stylesheet"
-          href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
-    <link rel="stylesheet"
-          href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/css/font-icons/entypo/css/entypo.css">
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/css/font-icons/entypo/css/entypo.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic">
-    <link rel="stylesheet"
-          href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/css/bootstrap.css">
-    <link rel="stylesheet"
-          href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/css/neon-core.css">
-    <link rel="stylesheet"
-          href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/css/neon-theme.css">
-    <link rel="stylesheet"
-          href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/css/neon-forms.css">
-    <link rel="stylesheet"
-          href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/css/custom.css">
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/css/neon-core.css">
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/css/neon-theme.css">
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/css/neon-forms.css">
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/css/custom.css">
 
-    <script
-        src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/js/jquery-1.11.0.min.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/jquery-1.11.0.min.js"></script>
     <script>$.noConflict();</script>
 
     <!--[if lt IE 9]>
-    <script
-        src="<?php echo 'http://'. $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/js/ie8-responsive-file-warning.js"></script>
+    <script src="<?php echo 'http://'. $_SERVER['HTTP_HOST'] ?>/assets/js/ie8-responsive-file-warning.js"></script>
     <![endif]-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -48,8 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 </head>
-<body class="page-body login-page login-form-fall"
-">
+<body class="page-body login-page login-form-fall">
 
 <!-- This is needed when you send requests via Ajax -->
 <script type="text/javascript">
@@ -63,8 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="login-content">
 
             <a href="index.html" class="logo">
-                <img src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/images/logo@2x.png"
-                     width="120" alt=""/>
+                <img src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/images/logo@2x.png" width="120" alt=""/>
             </a>
 
             <p class="description">Olá, faça o login para entrar no painel administrativo!</p>
@@ -100,8 +89,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <i class="entypo-user"></i>
                         </div>
 
-                        <input type="text" class="form-control" name="usuario" id="username" placeholder="Usuário"
-                               autocomplete="off"/>
+                        <input type="text" class="form-control" name="usuario" id="username" placeholder="Usuário" autocomplete="off"/>
                     </div>
 
                 </div>
@@ -113,8 +101,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <i class="entypo-key"></i>
                         </div>
 
-                        <input type="password" class="form-control" name="senha" id="password" placeholder="Senha"
-                               autocomplete="off"/>
+                        <input type="password" class="form-control" name="senha" id="password" placeholder="Senha" autocomplete="off"/>
                     </div>
 
                 </div>
@@ -144,20 +131,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 <!-- Bottom scripts (common) -->
-<script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/js/gsap/main-gsap.js"></script>
-<script
-    src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
-<script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/js/bootstrap.js"></script>
-<script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/js/joinable.js"></script>
-<script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/js/resizeable.js"></script>
-<script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/js/neon-api.js"></script>
-<script
-    src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/js/jquery.validate.min.js"></script>
-<script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/js/neon-login.js"></script>
+<script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/gsap/main-gsap.js"></script>
+<script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
+<script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/bootstrap.js"></script>
+<script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/joinable.js"></script>
+<script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/resizeable.js"></script>
+<script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/neon-api.js"></script>
+<script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/jquery.validate.min.js"></script>
+<script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/neon-login.js"></script>
 
 
 <!-- JavaScripts initializations and stuff -->
-<script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/ProjetoFaculdade/assets/js/neon-custom.js"></script>
+<script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/neon-custom.js"></script>
 
 
 <!-- Demo Settings -->

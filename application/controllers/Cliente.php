@@ -5,6 +5,12 @@ class Cliente extends CI_Controller {
 
     public function index()
     {
-        $this->load->view('index');
+        echo  "oi";
+//        $this->load->view('cliente/index');
+    }
+
+    public function editar()
+    {
+        $this->load->view('cliente/editar');
     }
 }

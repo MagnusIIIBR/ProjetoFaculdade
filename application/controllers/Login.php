@@ -6,6 +6,17 @@ class Login extends CI_Controller {
 
     public function index()
     {
-        $this->load->view('Login/index');
+        $this->load->view('login/index');
     }
+    public function editar()
+    {
+        $this->load->view('login/index');
+    }
+
+    public function recuperarSenha()
+    {
+        $this->load->view('login/recuperarSenha');
+    }
+
+
 }

@@ -2,71 +2,50 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+  <head>
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  	<meta name="description" content="">
+  	<meta name="author" content="Pedro Gabriel">
+  	<link rel="icon" href="images/favicon.ico">
 
-	<style type="text/css">
+  	<title>Theme Template for Bootstrap</title>
 
-	::selection { background-color: #E13300; color: white; }
-	::-moz-selection { background-color: #E13300; color: white; }
+  	<!-- Bootstrap core CSS -->
+  	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<!-- Bootstrap theme -->
+  	<link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 
-	body {
-		background-color: #fff;
-		margin: 40px;
-		font: 13px/20px normal Helvetica, Arial, sans-serif;
-		color: #4F5155;
-	}
+  	<!-- Custom styles for this template -->
+  	<link href="css/main.css" rel="stylesheet">
+  </head>
 
-	a {
-		color: #003399;
-		background-color: transparent;
-		font-weight: normal;
-	}
+  <body role="document">
 
-	h1 {
-		color: #444;
-		background-color: transparent;
-		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
-		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
-	}
+    <?php $this->load->view('header'); ?>
 
-	code {
-		font-family: Consolas, Monaco, Courier New, Courier, monospace;
-		font-size: 12px;
-		background-color: #f9f9f9;
-		border: 1px solid #D0D0D0;
-		color: #002166;
-		display: block;
-		margin: 14px 0 14px 0;
-		padding: 12px 10px 12px 10px;
-	}
+  	<div class="container theme-showcase" role="main">
 
-	#body {
-		margin: 0 15px 0 15px;
-	}
+        <?php if(!empty($message['message'])): ?>
 
-	p.footer {
-		text-align: right;
-		font-size: 11px;
-		border-top: 1px solid #D0D0D0;
-		line-height: 32px;
-		padding: 0 10px 0 10px;
-		margin: 20px 0 0 0;
-	}
+            <div class="alert alert-<?=$message['class']?>"><?=$message['message']?></div>
 
-	#container {
-		margin: 10px;
-		border: 1px solid #D0D0D0;
-		box-shadow: 0 0 8px #D0D0D0;
-	}
-	</style>
-</head>
-<body>
-Testowy index
+        <?php endif; ?>
 
+        <?php $this->load->view($view); ?>
+
+  	</div> <!-- /container -->
+
+    <?php $this->load->view('footer'); ?>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="javascript/script.js"></script>
 </body>
 </html>
