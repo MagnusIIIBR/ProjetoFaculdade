@@ -5,8 +5,8 @@ class Cliente extends CI_Controller {
 
     public function index()
     {
-        echo  "oi";
-//        $this->load->view('cliente/index');
+//        echo  "oi";
+      $this->load->view('cliente/index');
     }
 
     public function editar()

@@ -1,6 +1,4 @@
 <header>
-    <?php if ($this->user): ?>
-
         <div class="sidebar-menu">
 
             <div class="sidebar-menu-inner">
@@ -660,7 +658,4 @@
             </div>
 
         </div>
-
-    <?php endif ?>
-
 </header>
