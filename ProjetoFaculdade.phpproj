@@ -33,6 +33,7 @@
     <Compile Include="application\config\routes.php" />
     <Compile Include="application\config\smileys.php" />
     <Compile Include="application\config\user_agents.php" />
+    <Compile Include="application\controllers\Dashboard.php" />
     <Compile Include="application\controllers\TipoCalcado.php" />
     <Compile Include="application\controllers\Marca.php" />
     <Compile Include="application\controllers\Fornecedor.php" />
@@ -1003,6 +1004,7 @@
     <Compile Include="application\third_party\Doctrine\Symfony\Component\Console\README.md" />
     <Compile Include="application\third_party\Doctrine\Symfony\Component\Console\Shell.php" />
     <Compile Include="application\third_party\index.html" />
+    <Compile Include="application\views\dashboard.php" />
     <Compile Include="application\views\Fornecedor\Editar.php" />
     <Compile Include="application\views\Fornecedor\Index.php" />
     <Compile Include="application\views\Marca\Editar.php" />

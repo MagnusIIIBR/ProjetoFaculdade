@@ -234,254 +234,59 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
             <hr />
 
-            <ol class="breadcrumb bc-3">
-                <li>
-                    <a href="#">
-                        <i class="fa-home"></i>
-                        Home
-                    </a>
-                </li>
-                <li>
+            <div class="row">
+                <div class="col-sm-3 col-xs-6">
 
-                    <a href="#">Controller</a>
-                </li>
-                <li class="active">
+                    <div class="tile-stats tile-red">
+                        <div class="icon">
+                            <i class="entypo-users"></i>
+                        </div>
+                        <div class="num" data-start="0" data-end="83" data-postfix="" data-duration="1500" data-delay="0">83</div>
 
-                    <strong>Método</strong>
-                </li>
-            </ol>
+                        <h3>Clientes cadastrados</h3>
+                    </div>
 
-            <h3>Cargo</h3>
+                </div>
 
-            <table class="table table-bordered table-striped datatable" id="table-2">
-                <thead>
-                    <tr>
-                        <th>
-                            <div class="checkbox checkbox-replace">
-                                <input type="checkbox" id="chk-1" />
-                            </div>
-                        </th>
-                        <th>Cargo</th>
-                        <th>Nível</th>
+                <div class="col-sm-3 col-xs-6">
 
-                        <th>Ações</th>
-                    </tr>
-                </thead>
+                    <div class="tile-stats tile-green">
+                        <div class="icon">
+                            <i class="entypo-chart-bar"></i>
+                        </div>
+                        <div class="num" data-start="0" data-end="135" data-postfix="" data-duration="1500" data-delay="600">135</div>
 
-                <tbody>
+                        <h3>Produtos vendidos</h3>
+                    </div>
 
-                    <tr>
-                        <td>
-                            <div class="checkbox checkbox-replace">
-                                <input type="checkbox" id="chk-1" />
-                            </div>
-                        </td>
-                        <td>Cargo</td>
-                        <td>1</td>
-                        <td>
-                            <a href="#" class="btn btn-default btn-sm btn-icon icon-left">
-                                <i class="entypo-pencil"></i>
-                                Editar
-                            </a>
+                </div>
 
-                            <a href="#" class="btn btn-danger btn-sm btn-icon icon-left">
-                                <i class="entypo-cancel"></i>
-                                Exluir
-                            </a>
+                <div class="col-sm-3 col-xs-6">
 
-                            <a href="#" class="btn btn-info btn-sm btn-icon icon-left">
-                                <i class="entypo-info"></i>
-                                Detalhes
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="checkbox checkbox-replace">
-                                <input type="checkbox" id="chk-1" />
-                            </div>
-                        </td>
-                        <td>Cargo</td>
-                        <td>1</td>
-                        <td>
-                            <a href="#" class="btn btn-default btn-sm btn-icon icon-left">
-                                <i class="entypo-pencil"></i>
-                                Editar
-                            </a>
+                    <div class="tile-stats tile-aqua">
+                        <div class="icon">
+                            <i class="entypo-credit-card"></i>
+                        </div>
+                        <div class="num" data-postfix="" data-duration="1500" data-delay="1200">2,032.50</div>
 
-                            <a href="#" class="btn btn-danger btn-sm btn-icon icon-left">
-                                <i class="entypo-cancel"></i>
-                                Exluir
-                            </a>
+                        <h3>Lucro/dia</h3>
+                    </div>
 
-                            <a href="#" class="btn btn-info btn-sm btn-icon icon-left">
-                                <i class="entypo-info"></i>
-                                Detalhes
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="checkbox checkbox-replace">
-                                <input type="checkbox" id="chk-1" />
-                            </div>
-                        </td>
-                        <td>Cargo</td>
-                        <td>1</td>
-                        <td>
-                            <a href="#" class="btn btn-default btn-sm btn-icon icon-left">
-                                <i class="entypo-pencil"></i>
-                                Editar
-                            </a>
+                </div>
 
-                            <a href="#" class="btn btn-danger btn-sm btn-icon icon-left">
-                                <i class="entypo-cancel"></i>
-                                Exluir
-                            </a>
+                <div class="col-sm-3 col-xs-6">
 
-                            <a href="#" class="btn btn-info btn-sm btn-icon icon-left">
-                                <i class="entypo-info"></i>
-                                Detalhes
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="checkbox checkbox-replace">
-                                <input type="checkbox" id="chk-1" />
-                            </div>
-                        </td>
-                        <td>Cargo</td>
-                        <td>1</td>
-                        <td>
-                            <a href="#" class="btn btn-default btn-sm btn-icon icon-left">
-                                <i class="entypo-pencil"></i>
-                                Editar
-                            </a>
+                    <div class="tile-stats tile-blue">
+                        <div class="icon">
+                            <i class="entypo-credit-card"></i>
+                        </div>
+                        <div class="num" data-postfix="" data-duration="1500" data-delay="1800">56,235.50</div>
 
-                            <a href="#" class="btn btn-danger btn-sm btn-icon icon-left">
-                                <i class="entypo-cancel"></i>
-                                Exluir
-                            </a>
+                        <h3>Lucro/mês</h3>
+                    </div>
 
-                            <a href="#" class="btn btn-info btn-sm btn-icon icon-left">
-                                <i class="entypo-info"></i>
-                                Detalhes
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="checkbox checkbox-replace">
-                                <input type="checkbox" id="chk-1" />
-                            </div>
-                        </td>
-                        <td>Cargo</td>
-                        <td>1</td>
-                        <td>
-                            <a href="#" class="btn btn-default btn-sm btn-icon icon-left">
-                                <i class="entypo-pencil"></i>
-                                Editar
-                            </a>
-
-                            <a href="#" class="btn btn-danger btn-sm btn-icon icon-left">
-                                <i class="entypo-cancel"></i>
-                                Exluir
-                            </a>
-
-                            <a href="#" class="btn btn-info btn-sm btn-icon icon-left">
-                                <i class="entypo-info"></i>
-                                Detalhes
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="checkbox checkbox-replace">
-                                <input type="checkbox" id="chk-1" />
-                            </div>
-                        </td>
-                        <td>Cargo</td>
-                        <td>1</td>
-                        <td>
-                            <a href="#" class="btn btn-default btn-sm btn-icon icon-left">
-                                <i class="entypo-pencil"></i>
-                                Editar
-                            </a>
-
-                            <a href="#" class="btn btn-danger btn-sm btn-icon icon-left">
-                                <i class="entypo-cancel"></i>
-                                Exluir
-                            </a>
-
-                            <a href="#" class="btn btn-info btn-sm btn-icon icon-left">
-                                <i class="entypo-info"></i>
-                                Detalhes
-                            </a>
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
-
-            <script type="text/javascript">
-		jQuery(window).load(function()
-		{
-			var $ = jQuery;
-
-			$("#table-2").dataTable({
-				"sPaginationType": "bootstrap",
-				"sDom": "t<'row'<'col-xs-6 col-left'i><'col-xs-6 col-right'p>>",
-				"bStateSave": false,
-				"iDisplayLength": 8,
-				"aoColumns": [
-					{ "bSortable": false },
-					null,
-					null,
-					null,
-					null
-				]
-			});
-
-			$(".dataTables_wrapper select").select2({
-				minimumResultsForSearch: -1
-			});
-
-			// Highlighted rows
-			$("#table-2 tbody input[type=checkbox]").each(function(i, el)
-			{
-				var $this = $(el),
-					$p = $this.closest('tr');
-
-				$(el).on('change', function()
-				{
-					var is_checked = $this.is(':checked');
-
-					$p[is_checked ? 'addClass' : 'removeClass']('highlight');
-				});
-			});
-
-			// Replace Checboxes
-			$(".pagination a").click(function(ev)
-			{
-				replaceCheckboxes();
-			});
-		});
-
-		// Sample Function to add new row
-		var giCount = 1;
-
-		function fnClickAddRow()
-		{
-			$('#table-2').dataTable().fnAddData(['<div class="checkbox checkbox-replace"><input type="checkbox" /></div>', giCount+".2", giCount+".3", giCount+".4", giCount+".5" ]);
-
-			replaceCheckboxes(); // because there is checkbox, replace it
-
-			giCount++;
-		}
-            </script>
-
-
+                </div>
+            </div>
 
             <br />
             <br />
