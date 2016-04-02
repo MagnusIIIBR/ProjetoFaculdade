@@ -144,27 +144,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 
     <div class="main-content">
-
         <div class="row">
-
             <!-- Profile Info and Notifications -->
             <div class="col-md-6 col-sm-8 clearfix">
-
                 <ul class="user-info pull-left pull-none-xsm">
-
                     <!-- Profile Info -->
                     <li class="profile-info dropdown"><!-- add class "pull-right" if you want to place this from right -->
-
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/images/thumb-1@2x.png" alt="" class="img-circle" width="44" />
-NomeUsuário
+                            NomeUsuário
                         </a>
-
                         <ul class="dropdown-menu">
-
                             <!-- Reverse Caret -->
                             <li class="caret"></li>
-
                             <!-- Profile sub-links -->
                             <li>
                                 <a href="extra-timeline.html">
@@ -172,21 +164,18 @@ NomeUsuário
                                     Edit Profile
                                 </a>
                             </li>
-
                             <li>
                                 <a href="mailbox.html">
                                     <i class="entypo-mail"></i>
                                     Inbox
                                 </a>
                             </li>
-
                             <li>
                                 <a href="extra-calendar.html">
                                     <i class="entypo-calendar"></i>
                                     Calendar
                                 </a>
                             </li>
-
                             <li>
                                 <a href="#">
                                     <i class="entypo-clipboard"></i>
@@ -195,39 +184,29 @@ NomeUsuário
                             </li>
                         </ul>
                     </li>
-
                 </ul>
-
             </div>
 
 
             <!-- Raw Links -->
             <div class="col-md-6 col-sm-4 clearfix hidden-xs">
-
                 <ul class="list-inline links-list pull-right">
-
                     <li>
                         <a href="#" data-toggle="chat" data-collapse-sidebar="1">
                             <i class="entypo-chat"></i>
                             Chat
-
                             <span class="badge badge-success chat-notifications-badge is-hidden">0</span>
                         </a>
                     </li>
-
                     <li class="sep"></li>
-
                     <li>
                         <a href="#">
                             Sair <i class="entypo-logout right"></i>
                         </a>
                     </li>
                 </ul>
-
             </div>
-
         </div>
-
         <hr />
 
         <ol class="breadcrumb bc-3" >
@@ -250,14 +229,11 @@ NomeUsuário
 
         <div class="row">
             <div class="col-md-12">
-
                 <div class="panel panel-primary" data-collapsed="0">
-
                     <div class="panel-heading">
                         <div class="panel-title">
-Formulário de dados básicos
+                            Formulário de dados básicos
                         </div>
-
                         <div class="panel-options">
                             <a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
                             <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
@@ -265,7 +241,6 @@ Formulário de dados básicos
                     </div>
 
                     <div class="panel-body">
-
                         <form role="form" class="form-horizontal form-groups-bordered">
                             <div class="form-group">
                                 <label for="field-1" class="col-sm-3 control-label">Nome completo</label>
@@ -282,6 +257,40 @@ Formulário de dados básicos
                                     <input type="text" class="form-control" id="field-1" placeholder="Digite o e-mail">
                                 </div>
                             </div>
+                            
+                            <div class="form-group">
+                                <label for="field-1" class="col-sm-3 control-label">Telefone</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" id="field-1" placeholder="Digite o telefone">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Estado</label>
+                                <div class="col-sm-5">
+                                    <select class="form-control">
+                                        <option>AC</option>
+                                        <option>DF</option>
+                                        <option>MG</option>
+                                        <option>MS</option>
+                                        <option>RJ</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="field-1" class="col-sm-3 control-label">Cidade</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" id="field-1" placeholder="Digite a cidade">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="field-1" class="col-sm-3 control-label">Bairro</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" id="field-1" placeholder="Digite o bairro">
+                                </div>
+                            </div>
 
                             <div class="form-group">
                                 <label for="field-1" class="col-sm-3 control-label">CEP</label>
@@ -293,39 +302,22 @@ Formulário de dados básicos
 
                             <div class="form-group">
                                 <label for="field-1" class="col-sm-3 control-label">Endereço</label>
-
                                 <div class="col-sm-5">
                                     <input type="text" class="form-control" id="field-1" placeholder="Digite o endereço">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="field-1" class="col-sm-3 control-label">Bairro</label>
-
+                                <label for="field-1" class="col-sm-3 control-label">Número</label>
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="field-1" placeholder="Digite o bairro">
+                                    <input type="text" class="form-control" id="field-1" placeholder="Digite o número">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="field-1" class="col-sm-3 control-label">Telefone</label>
-
+                                <label for="field-1" class="col-sm-3 control-label">Complemento</label>
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="field-1" placeholder="Digite o telefone">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">Estado</label>
-
-                                <div class="col-sm-5">
-                                    <select class="form-control">
-                                        <option>AC</option>
-                                        <option>DF</option>
-                                        <option>MG</option>
-                                        <option>MS</option>
-                                        <option>RJ</option>
-                                    </select>
+                                    <input type="text" class="form-control" id="field-1" placeholder="Digite o complemento">
                                 </div>
                             </div>
 
@@ -343,34 +335,25 @@ Formulário de dados básicos
                                     </div>
                                 </div>
                             </div>
-
                         </form>
-
                     </div>
-
                 </div>
-
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-12">
-
                 <div class="panel panel-primary" data-collapsed="0">
-
                     <div class="panel-heading">
                         <div class="panel-title">
-                            Formulário de dados específicos
+                            Formulário de dados específicos (Pessoa Física)
                         </div>
-
                         <div class="panel-options">
                             <a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
                             <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
                         </div>
                     </div>
-
                     <div class="panel-body">
-
                         <form role="form" class="form-horizontal form-groups-bordered">
                             <div class="form-group">
                                 <label for="field-1" class="col-sm-3 control-label">CPF</label>
@@ -379,7 +362,6 @@ Formulário de dados básicos
                                     <input type="text" class="form-control" id="field-1" placeholder="Digite o CPF">
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <label for="field-1" class="col-sm-3 control-label">RG</label>
 
@@ -387,15 +369,15 @@ Formulário de dados básicos
                                     <input type="text" class="form-control" id="field-1" placeholder="Digite o RG">
                                 </div>
                             </div>
-
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-5">
+                                    <button type="submit" class="btn btn-default">Salvar</button>
+                                </div>
+                            </div>
                         </form>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
 
 

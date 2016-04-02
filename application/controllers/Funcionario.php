@@ -5,6 +5,12 @@ class Funcionario extends CI_Controller {
 
     public function index()
     {
-        $this->load->view('index');
+        //        echo  "oi";
+        $this->load->view('funcionario/index');
+    }
+
+    public function editar()
+    {
+        $this->load->view('funcionario/editar');
     }
 }

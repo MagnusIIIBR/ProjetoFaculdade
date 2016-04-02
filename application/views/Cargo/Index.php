@@ -251,7 +251,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </li>
             </ol>
 
-            <h3>Clientes</h3>
+            <h3>Vendas</h3>
 
             <table class="table table-bordered table-striped datatable" id="table-2">
                 <thead>
@@ -261,9 +261,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <input type="checkbox" id="chk-1" />
                             </div>
                         </th>
-                        <th>Nome</th>
-                        <th>CPF</th>
-                        <th>Data de cadastro</th>
+                        <th>Cargo</th>
+                        <th>Nível</th>
+
                         <th>Ações</th>
                     </tr>
                 </thead>
@@ -276,9 +276,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <input type="checkbox" id="chk-1" />
                             </div>
                         </td>
-                        <td>Randy S. Smith</td>
-                        <td>025.201.141-42</td>
-                        <td>26/01/1995</td>
+                        <td>Cargo</td>
+                        <td>1</td>
                         <td>
                             <a href="#" class="btn btn-default btn-sm btn-icon icon-left">
                                 <i class="entypo-pencil"></i>
@@ -296,16 +295,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </a>
                         </td>
                     </tr>
-
                     <tr>
                         <td>
                             <div class="checkbox checkbox-replace">
                                 <input type="checkbox" id="chk-1" />
                             </div>
                         </td>
-                        <td>Ellen C. Jones</td>
-                        <td>025.201.141-42</td>
-                        <td>26/01/1995</td>
+                        <td>Cargo</td>
+                        <td>1</td>
                         <td>
                             <a href="#" class="btn btn-default btn-sm btn-icon icon-left">
                                 <i class="entypo-pencil"></i>
@@ -323,16 +320,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </a>
                         </td>
                     </tr>
-
                     <tr>
                         <td>
                             <div class="checkbox checkbox-replace">
                                 <input type="checkbox" id="chk-1" />
                             </div>
                         </td>
-                        <td>Carl D. Kaya</td>
-                        <td>025.201.141-42</td>
-                        <td>26/01/1995</td>
+                        <td>Cargo</td>
+                        <td>1</td>
                         <td>
                             <a href="#" class="btn btn-default btn-sm btn-icon icon-left">
                                 <i class="entypo-pencil"></i>
@@ -350,16 +345,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </a>
                         </td>
                     </tr>
-
                     <tr>
                         <td>
                             <div class="checkbox checkbox-replace">
                                 <input type="checkbox" id="chk-1" />
                             </div>
                         </td>
-                        <td>Jennifer J. Jefferson</td>
-                        <td>025.201.141-42</td>
-                        <td>26/01/1995</td>
+                        <td>Cargo</td>
+                        <td>1</td>
                         <td>
                             <a href="#" class="btn btn-default btn-sm btn-icon icon-left">
                                 <i class="entypo-pencil"></i>
@@ -377,19 +370,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </a>
                         </td>
                     </tr>
-
                     <tr>
                         <td>
                             <div class="checkbox checkbox-replace">
                                 <input type="checkbox" id="chk-1" />
                             </div>
                         </td>
-                        <td>
-                            April L. Baker
-
-                        </td>
-                        <td>025.201.141-42</td>
-                        <td>26/01/1995</td>
+                        <td>Cargo</td>
+                        <td>1</td>
                         <td>
                             <a href="#" class="btn btn-default btn-sm btn-icon icon-left">
                                 <i class="entypo-pencil"></i>
@@ -407,70 +395,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </a>
                         </td>
                     </tr>
-
                     <tr>
                         <td>
                             <div class="checkbox checkbox-replace">
                                 <input type="checkbox" id="chk-1" />
                             </div>
                         </td>
-                        <td>Lillian J. Earl</td>
-                        <td>025.201.141-42</td>
-                        <td>26/01/1995</td>
-                        <td>
-                            <a href="#" class="btn btn-default btn-sm btn-icon icon-left">
-                                <i class="entypo-pencil"></i>
-                                Editar
-                            </a>
-
-                            <a href="#" class="btn btn-danger btn-sm btn-icon icon-left">
-                                <i class="entypo-cancel"></i>
-                                Exluir
-                            </a>
-
-                            <a href="#" class="btn btn-info btn-sm btn-icon icon-left">
-                                <i class="entypo-info"></i>
-                                Detalhes
-                            </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <div class="checkbox checkbox-replace">
-                                <input type="checkbox" id="chk-1" />
-                            </div>
-                        </td>
-                        <td>Ellen C. Jones</td>
-                        <td>025.201.141-42</td>
-                        <td>26/01/1995</td>
-                        <td>
-                            <a href="#" class="btn btn-default btn-sm btn-icon icon-left">
-                                <i class="entypo-pencil"></i>
-                                Editar
-                            </a>
-
-                            <a href="#" class="btn btn-danger btn-sm btn-icon icon-left">
-                                <i class="entypo-cancel"></i>
-                                Exluir
-                            </a>
-
-                            <a href="#" class="btn btn-info btn-sm btn-icon icon-left">
-                                <i class="entypo-info"></i>
-                                Detalhes
-                            </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <div class="checkbox checkbox-replace">
-                                <input type="checkbox" id="chk-1" />
-                            </div>
-                        </td>
-                        <td>Randy S. Smith</td>
-                        <td>025.201.141-42</td>
-                        <td>26/01/1995</td>
+                        <td>Cargo</td>
+                        <td>1</td>
                         <td>
                             <a href="#" class="btn btn-default btn-sm btn-icon icon-left">
                                 <i class="entypo-pencil"></i>

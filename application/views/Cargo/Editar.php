@@ -223,7 +223,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </li>
         </ol>
 
-        <h2>Produto</h2>
+        <h2>Cargo</h2>
         <br />
 
 
@@ -243,71 +243,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="panel-body">
                         <form role="form" class="form-horizontal form-groups-bordered">
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">Marca</label>
+                                <label for="field-1" class="col-sm-3 control-label">Nome</label>
+
                                 <div class="col-sm-5">
-                                    <select class="form-control">
-                                        <option>Nike</option>
-                                        <option>Adidas</option>
-                                        <option>Rainha</option>
-                                        <option>All Star</option>
-                                    </select>
+                                    <input type="text" class="form-control" id="field-1" placeholder="Digite o nome">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">Tipo de calçado</label>
-                                <div class="col-sm-5">
-                                    <select class="form-control">
-                                        <option>Tênis</option>
-                                        <option>Sapato</option>
-                                        <option>Sapatilha</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">Gênero</label>
-                                <div class="col-sm-5">
-                                    <select class="form-control">
-                                        <option>Masculino</option>
-                                        <option>Feminino</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">Fornecedor</label>
-                                <div class="col-sm-5">
-                                    <select class="form-control">
-                                        <option>Fornecedor 2</option>
-                                        <option>Fornecedor 1</option>
-                                        <option>Fornecedor 3</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                             <div class="form-group">
-                                <label for="field-1" class="col-sm-3 control-label">Preço</label>
+                                <label for="field-1" class="col-sm-3 control-label">Nível de permissão</label>
 
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="field-1" placeholder="Digite o preço">
-                                </div>
+                                    <textarea class="form-control autogrow" id="field-ta" placeholder="Lista de permissões" style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 48px;"></textarea>
+                                    <button type="submit" class="btn btn-default">Adicionar permissão</button></div>
                             </div>
-
-                            <div class="form-group">
-                                <label for="field-1" class="col-sm-3 control-label">Tamanho</label>
-
-                                <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="field-1" placeholder="Digite o tamanho">
+                                <div class="form-group">
+                                    <div class="col-sm-offset-3 col-sm-5">
+                                        <button type="submit" class="btn btn-default">Salvar</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-offset-3 col-sm-5">
-                                    <button type="submit" class="btn btn-default">Salvar</button>
-                                </div>
-                            </div>
-                           
-
                         </form>
                     </div>
                 </div>
