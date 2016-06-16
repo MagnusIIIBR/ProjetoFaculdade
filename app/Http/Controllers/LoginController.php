@@ -8,5 +8,12 @@ use App\Http\Requests;
 
 class LoginController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('Login.Index');
+    }
+    public function editar()
+    {
+        return view('Login.Editar');
+    }
 }
