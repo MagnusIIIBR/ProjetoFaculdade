@@ -9,16 +9,16 @@
 
     <title>Projeto SAPATARIA | Sistema</title>
 
-    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css" />
-    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/css/font-icons/entypo/css/entypo.css" />
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css" />
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/css/font-icons/entypo/css/entypo.css" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic" />
-    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/css/neon-core.css" />
-    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/css/neon-theme.css" />
-    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/css/neon-forms.css" />
-    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/css/custom.css" />
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/css/neon-core.css" />
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/css/neon-theme.css" />
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/css/neon-forms.css" />
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/css/custom.css" />
 
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/jquery-1.11.0.min.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/jquery-1.11.0.min.js"></script>
     <!--<script>$.noConflict();</script>-->
 
     <!--[if lt IE 9]><script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -567,35 +567,35 @@
 
 
     <!-- Imported styles on this page -->
-    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/datatables/responsive/css/datatables.responsive.css" />
-    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/select2/select2-bootstrap.css" />
-    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/select2/select2.css" />
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/datatables/responsive/css/datatables.responsive.css" />
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/select2/select2-bootstrap.css" />
+    <link rel="stylesheet" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/select2/select2.css" />
 
     <!-- Bottom scripts (common) -->
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/gsap/main-gsap.js"></script>
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/bootstrap.js"></script>
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/joinable.js"></script>
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/resizeable.js"></script>
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/neon-api.js"></script>
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/jquery.dataTables.min.js"></script>
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/datatables/TableTools.min.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/gsap/main-gsap.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/bootstrap.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/joinable.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/resizeable.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/neon-api.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/jquery.dataTables.min.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/datatables/TableTools.min.js"></script>
 
 
     <!-- Imported scripts on this page -->
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/dataTables.bootstrap.js"></script>
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/datatables/jquery.dataTables.columnFilter.js"></script>
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/datatables/lodash.min.js"></script>
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/datatables/responsive/js/datatables.responsive.js"></script>
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/select2/select2.min.js"></script>
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/neon-chat.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/dataTables.bootstrap.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/datatables/jquery.dataTables.columnFilter.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/datatables/lodash.min.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/datatables/responsive/js/datatables.responsive.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/select2/select2.min.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/neon-chat.js"></script>
 
 
     <!-- JavaScripts initializations and stuff -->
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/neon-custom.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/neon-custom.js"></script>
 
 
     <!-- Demo Settings -->
-    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/assets/js/neon-demo.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['HTTP_HOST'] ?>/resources/assets/js/neon-demo.js"></script>
 </body>
 </html>
